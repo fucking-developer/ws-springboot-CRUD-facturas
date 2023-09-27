@@ -1,0 +1,68 @@
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('María', 'García', 'maria@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Carlos', 'López', 'carlos@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Laura', 'Rodríguez', 'laura@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Andrés', 'Hernández', 'andres@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Isabel', 'González', 'isabel@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Pedro', 'Pérez', 'pedro@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Ana', 'Ramírez', 'ana@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Miguel', 'Díaz', 'miguel@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Ximena', 'Ríos', 'ximena@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Fernando', 'Torres', 'fernando@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Carmen', 'Gómez', 'carmen@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Jorge', 'Vargas', 'jorge@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Lucía', 'Castillo', 'lucia@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Roberto', 'Ortega', 'roberto@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Verónica', 'Luna', 'veronica@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Oscar', 'Sánchez', 'oscar@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Natalia', 'Romero', 'natalia@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Daniel', 'Mendoza', 'daniel@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Valeria', 'Herrera', 'valeria@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Ricardo', 'Lara', 'ricardo@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Martha', 'Cruz', 'martha@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Hugo', 'Guerrero', 'hugo@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Elena', 'Fuentes', 'elena@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Arturo', 'Navarro', 'arturo@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Diana', 'Rojas', 'diana@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Alejandro', 'Barrera', 'alejandro@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Patricia', 'Silva', 'patricia@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Raul', 'Jiménez', 'raul@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Gabriela', 'Gallardo', 'gabriela@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Julio', 'Soto', 'julio@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Liliana', 'Valenzuela', 'liliana@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Ernesto', 'Mora', 'ernesto@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Luisa', 'Cordero', 'luisa@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Francisco', 'Aguilar', 'francisco@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Camila', 'Pineda', 'camila@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Ignacio', 'Palacios', 'ignacio@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Beatriz', 'Méndez', 'beatriz@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Emilio', 'Vega', 'emilio@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Silvia', 'Andrade', 'silvia@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Salvador', 'Miranda', 'salvador@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Marcela', 'Mendoza', 'marcela@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Felipe', 'Cervantes', 'felipe@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Renata', 'Villarreal', 'renata@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Erick', 'Solís', 'erick@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Adriana', 'Orozco', 'adriana@yahoo.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Rogelio', 'Guzmán', 'rogelio@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Gabriel', 'Paredes', 'gabriel@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Regina', 'Santillán', 'regina@gmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Pablo', 'Becerra', 'pablo@hotmail.com', '2023-07-27', '');
+INSERT INTO clientes (nombre, apellido, email, create_at, foto) VALUES ('Sofía', 'Martínez', 'sofia@gmail.com', '2023-07-27', '');
+
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Camiseta de algodón', 15.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Zapatos deportivos', 59.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Teléfono inteligente', 399.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Mochila resistente al agua', 29.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Set de utensilios de cocina', 49.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Perfume floral', 34.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Monitor LED de 27 pulgadas', 199.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Reloj de pulsera elegante', 79.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Cámara digital compacta', 149.99, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Cargador portátil USB', 19.99, NOW());
+
+INSERT INTO users (username, password, enabled) VALUES ('JONATHAN', '$2a$10$hduoijZuwaKUF.xJdjd0Yuzw2uEXcRi3s1vt/4NCsf8EKqWXG1G0G', CAST(1 AS BOOLEAN))
+INSERT INTO users (username, password, enabled) VALUES ('ADMIN', '$2a$10$.k/BoOpRFxnvcOrkDlLN1.tBlJebUn3kv4ZnltXd4/G6AoOhdG93e', CAST(1 AS BOOLEAN))
+
+INSERT INTO auth (user_id, authority) VALUES (1,'ROLE_USER');
+INSERT INTO auth (user_id, authority) VALUES (2,'ROLE_ADMIN');
+INSERT INTO auth (user_id, authority) VALUES (2,'ROLE_USER');

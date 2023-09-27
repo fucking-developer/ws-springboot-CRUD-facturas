@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Cliente {
+    -Integer id
+    -String nombre
+    -String email
+    -Date createAt
+    -List<Factura> facturas;
+}
+
+class Factura {
+    -Integer folio
+    -String descripcion
+    -String observacion
+    -Date fecha
+    +Long calcularTotal()
+}
+
+class ItemFactura{
+    -Integer cantidad
+    +Long calcularImporte()
+}
+
+class Producto{
+    - String nombre
+    - Long precio
+}
+
+Cliente o-- Factura : 1:N
+Factura o-- ItemFactura : 1:N
+ItemFactura --> Producto : N:1
+
+@enduml
