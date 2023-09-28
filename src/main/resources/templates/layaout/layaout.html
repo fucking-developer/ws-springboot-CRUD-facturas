@@ -34,7 +34,7 @@
                             <ul class="dropdown-menu">
                                 <form  id="logoutForm" th:action="@{/logout}" method="post">
                                     <button class="dropdown-item" onclick="document.getElementById('logoutForm').submit();" type="submit">Sign out</button>
-                                    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+                                    <!--<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"> -->
                                 </form>
                             </ul>
                         </li>

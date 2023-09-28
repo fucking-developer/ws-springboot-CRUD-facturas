@@ -1,4 +1,4 @@
-package com.jonhdevelop.springbootapifacturas.auth;
+package com.jonhdevelop.springbootapifacturas.auth.handler;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
