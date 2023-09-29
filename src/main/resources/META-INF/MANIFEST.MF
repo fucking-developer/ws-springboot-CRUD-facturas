@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: com.jonhdevelop.springbootapifacturas.SpringBootApiFacturasApplication
+Main-Class: com.jonhdevelop.springbootapifacturas.SpringBootApiFacturasA
+ pplication
 
