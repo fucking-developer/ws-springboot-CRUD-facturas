@@ -4,12 +4,12 @@
 <body>
     <header th:replace="layaout/layaout :: header"></header>
 
-    <div class="container py-4">
+    <div class="container  position-absolute top-50 start-50 translate-middle ">
         <div class="card bg-light">
             <div class="card-header" th:text="${titulo}"></div>
             <div class="card-body">
                 <h4 class="card-titulo">
-                    <a sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-success btn-xs" th:href="@{/form}">Nuevo cliente</a>
+                    <a sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-success btn-xs" th:href="@{/form}" th:text="#{text.nuevo}">Nuevo cliente</a>
                 </h4>
                 <table class="table table-striped">
                     <thead>
@@ -19,9 +19,9 @@
                         <th th:text="#{text.cliente.apellido}">Apellido</th>
                         <th th:text="#{text.cliente.email}">Correo</th>
                         <th th:text="#{text.cliente.createAt}">Fecha</th>
-                        <th sec:authorize="hasRole('ROLE_ADMIN')">Factura</th>
-                        <th sec:authorize="hasRole('ROLE_ADMIN')">Editar</th>
-                        <th sec:authorize="hasRole('ROLE_ADMIN')">Eliminar</th>
+                        <th sec:authorize="hasRole('ROLE_ADMIN')" >Factura</th>
+                        <th sec:authorize="hasRole('ROLE_ADMIN')" th:text="#{text.cliente.editar}">Editar</th>
+                        <th sec:authorize="hasRole('ROLE_ADMIN')" th:text="#{text.cliente.eliminar}">Eliminar</th>
                     </tr>
                     </thead>
                     <tbody>

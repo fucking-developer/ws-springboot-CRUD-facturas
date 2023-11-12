@@ -163,7 +163,7 @@ public class ClienteController {
 		}
 		if (!foto.isEmpty()) {
 			if (cliente.getId() != null && cliente.getId() > 0 && cliente.getFoto() != null
-					&& cliente.getFoto().length() > 0) {
+					&& !cliente.getFoto().isEmpty()) {
 				uploadFileService.delete(cliente.getFoto());
 			}
 			String uniqueFilename = null;

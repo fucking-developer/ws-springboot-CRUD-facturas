@@ -42,13 +42,14 @@ public class SpringSecurityConfig {
                 .antMatchers("/", "/css/**", "/js/**", "/images/**", "/listar", "/locale").permitAll()
                 .anyRequest().authenticated()
                 .and()
+                //CONFIGURACION DE JWT
                 /*.addFilter(new JWTAuthenticationFilter(authenticationConfiguration.getAuthenticationManager(), jwtService))
                 .addFilter(new JWTAuthorizationFilter(authenticationConfiguration.getAuthenticationManager(), jwtService))
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .exceptionHandling()
-                .accessDeniedHandler(new CustomAccessDeniedHandler());*/
+                .exceptionHandling().accessDeniedHandler(new CustomAccessDeniedHandler());*/
+                //CONFIGURACION DE SPRING SECURITY
                 .formLogin().loginPage("/login").successHandler(loginSuccessHandler).permitAll()
                 .and()
                 .logout().permitAll()
