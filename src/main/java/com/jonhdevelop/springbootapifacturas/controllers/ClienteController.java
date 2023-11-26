@@ -11,6 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.annotation.Secured;
@@ -105,7 +106,7 @@ public class ClienteController {
 		if(request.isUserInRole("ROLE_ADMIN")){
 			log.info("Otro metodo, El usuario {} tiene acceso", auth.getName());
 		}
-		Pageable pageRequest = PageRequest.of(page, 4);
+		Pageable pageRequest = PageRequest.of(page, 4, Sort.by("id").ascending());
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 		PageRender<Cliente> pageRender = new PageRender<Cliente>("/listar", clientes);
 		model.addAttribute("titulo", messageSource.getMessage("text.cliente.listar.titulo",null, locale));
@@ -161,18 +162,19 @@ public class ClienteController {
 			model.addAttribute("titulo", "Formulario de Cliente");
 			return "form";
 		}
+		cliente.setFoto("");
 		if (!foto.isEmpty()) {
 			if (cliente.getId() != null && cliente.getId() > 0 && cliente.getFoto() != null
-					&& !cliente.getFoto().isEmpty()) {
+					&& cliente.getFoto().length() > 0) {
 				uploadFileService.delete(cliente.getFoto());
 			}
-			String uniqueFilename = null;
+			String uniqueFilename = "";
 			try {
 				uniqueFilename = uploadFileService.copy(foto);
 			} catch (IOException e) {
 				log.error("Error al guardar el archivo");
 			}
-			flash.addFlashAttribute("info", "Has subido correctamente '" + uniqueFilename + "'");
+			//flash.addFlashAttribute("info", "Has subido correctamente '" + uniqueFilename + "'");
 			cliente.setFoto(uniqueFilename);
 		}
 		String mensajeFlash = (cliente.getId() != null) ? "Cliente editado con éxito!" : "Cliente creado con éxito!";

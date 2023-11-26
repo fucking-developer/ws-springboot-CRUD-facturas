@@ -19,7 +19,7 @@
                         <th th:text="#{text.cliente.apellido}">Apellido</th>
                         <th th:text="#{text.cliente.email}">Correo</th>
                         <th th:text="#{text.cliente.createAt}">Fecha</th>
-                        <th sec:authorize="hasRole('ROLE_ADMIN')" >Factura</th>
+                        <th sec:authorize="hasRole('ROLE_ADMIN')" th:text="#{text.cliente.factura}">Factura</th>
                         <th sec:authorize="hasRole('ROLE_ADMIN')" th:text="#{text.cliente.editar}">Editar</th>
                         <th sec:authorize="hasRole('ROLE_ADMIN')" th:text="#{text.cliente.eliminar}">Eliminar</th>
                     </tr>
@@ -31,9 +31,9 @@
                         <td th:text="${cliente.apellido}"></td>
                         <td th:text="${cliente.email}"></td>
                         <td th:text="${cliente.createAt}"></td>
-                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-success btn-xs" th:href="@{/factura/form/} + ${cliente.id}" th:text="'Crear factura'"></a></td>
-                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-primary btn-xs" th:href="@{/form/} + ${cliente.id}" th:text="'Editar'"></a></td>
-                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-danger btn-xs" th:href="@{/eliminar/} + ${cliente.id}" th:text="'Eliminar'" onclick="return confirm('eliminar?')"></a></td>
+                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-success btn-xs" th:href="@{/factura/form/} + ${cliente.id}" th:text="#{text.cliente.factura}"></a></td>
+                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-primary btn-xs" th:href="@{/form/} + ${cliente.id}" th:text="#{text.cliente.editar}"></a></td>
+                        <td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-danger btn-xs" th:href="@{/eliminar/} + ${cliente.id}" th:text="#{text.cliente.eliminar}" onclick="return confirm('eliminar?')"></a></td>
                     </tr>
                     </tbody>
                 </table>

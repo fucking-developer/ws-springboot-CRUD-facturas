@@ -50,7 +50,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 logger.info("Username desde raw: " + username);
                 logger.info("Password desde raw: " + password);
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                logger.info("Error");
             }
         }
         username = username.trim();

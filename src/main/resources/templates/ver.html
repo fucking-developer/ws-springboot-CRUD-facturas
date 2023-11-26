@@ -9,18 +9,35 @@
         <div class="card-body">
 
             <h4 class="card-title">
-                <a sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-success btn-xs" th:href="@{/factura/form/} + ${cliente.id}"
+                <a sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-success btn-xs" th:href="@{'/factura/form/' + ${cliente.id}}"
                    th:text="'Crear factura'"></a>
             </h4>
-            <img th:if="${#strings.length(cliente.foto) > 0}" class="img-thumbnail rounded float-left"
-                 style="max-width: 25%;" th:src="@{'/uploads/' + ${cliente.foto}}"
-                 th:alt="${cliente.foto}">
-            <ul class="list-group">
-                <li class="list-group-item" th:text="${cliente.nombre}"></li>
-                <li class="list-group-item" th:text="${cliente.apellido}"></li>
-                <li class="list-group-item" th:text="${cliente.email}"></li>
-                <li class="list-group-item" th:text="${cliente.createAt}"></li>
-            </ul>
+
+            <div th:if="${#strings.length(cliente.foto) < 1}" class="col-md-12">
+                <ul class="list-group">
+                    <li class="list-group-item" th:text="${cliente.nombre}"></li>
+                    <li class="list-group-item" th:text="${cliente.apellido}"></li>
+                    <li class="list-group-item" th:text="${cliente.email}"></li>
+                    <li class="list-group-item" th:text="${cliente.createAt}"></li>
+                </ul>
+            </div>
+
+            <div th:if="${#strings.length(cliente.foto) > 0}" class="row">
+                <div class="col-md-2">
+                    <img th:if="${#strings.length(cliente.foto) > 0}"
+                         class="img-thumbnail rounded float-left"
+                         style="max-width: 100%;" th:src="@{'/uploads/' + ${cliente.foto}}"
+                         th:alt="${cliente.foto}">
+                </div>
+                <div class="col-md-10">
+                    <ul class="list-group">
+                        <li class="list-group-item" th:text="${cliente.nombre}"></li>
+                        <li class="list-group-item" th:text="${cliente.apellido}"></li>
+                        <li class="list-group-item" th:text="${cliente.email}"></li>
+                        <li class="list-group-item" th:text="${cliente.createAt}"></li>
+                    </ul>
+                </div>
+            </div>
 
             <div th:if="${#lists.isEmpty(cliente.facturas)}" class="alert alert-info my-4"
                  th:text="'No hay facturas asignada para el cliente ' + ${cliente.nombre} + ' ' +  ${cliente.apellido}"></div>
